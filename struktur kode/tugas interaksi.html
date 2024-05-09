@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bymeg store cik</title>
+</head>
+<body>
+    <script>
+        // Menampilkan pesan selamat datang
+        alert("Selamat datang di Website kami!");
+  
+        // Meminta nama pengguna
+        var namaPengguna = prompt("Silakan lengkapi nama Anda:");
+  
+        // Memastikan pengguna telah memasukkan nama
+        if (namaPengguna) {
+          var konfirmasi = confirm(
+            "Apakah Anda yakin nama Anda adalah " + namaPengguna + "?"
+          );
+  
+          // Jika pengguna mengkonfirmasi, tampilkan pesan selamat datang
+          if (konfirmasi) {
+            alert("Selamat datang, " + namaPengguna + "!");
+          } else {
+            alert("Silakan coba lagi.");
+          }
+        } else {
+          alert("Silakan masukkan nama Anda.");
+        }
+      </script>
+</body>
+</html>

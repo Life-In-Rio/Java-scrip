@@ -62,3 +62,9 @@ console.log(
 var totalkeseluruhan =
   totalhargasetelahdiscount2 + total + totalhargasetelahdiscount;
 console.log("total harga keseluruhan adalah " + totalkeseluruhan);
+
+
+var ruang1 = 10
+var ruang2 = 11
+var perbandingan = ruang1<ruang2
+console.log(perbandingan)
