@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Contoh createElement Javascript</h1>
+    <div id="container"></div>
+    <script>
+      let paragraphElement = document.createElement("p");
+      paragraphElement.innerText = 'ini adalah text yang dibuat secara dinamis dengan menggunakan java'
+      document.getElementById("container").appendChild(paragraphElement);
+    </script>
+  </body>
+</html>

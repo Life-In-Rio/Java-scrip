@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+     <!-- no 1 -->
+     <p id="myParagraph">Hafizh Quran Mahir IT</p>
+     <!-- no 2 -->
+      <h1 id="myProject">Woy Haytam sigma skibidi</h1>
+      <div id="hasil"></div>
+      <!-- no 3 -->
+      <ul id="myList"> 
+         
+      </ul>
+      <!-- no 4 -->
+      <input type="text" id="ukuranBaju" placeholder="Masukkan ukuran baju">
+      <button onclick="tampilkanUkuranBaju()">Tampilkan</button>
+      <!-- no 5 -->
+      <input type="text" id="ukuranCelana" placeholder="Masukkan ukuran celana">
+      <button onclick="tampilkanUkuranCelana()">Tampilkan</button>
+      <ul id="listUkuranCelana"></ul>
+  
+     <script>
+         // no 1
+         var Hafizh = document.getElementById ("myParagraph")
+         console.log(Hafizh.innerHTML);
+         alert (Hafizh.innerHTML)
+ 
+         // no 2
+         var text = document.getElementById ("myProject")
+         console.log(text.innerText);
+         Hafizh.innerText=' Sigma mewing skibidi toilet level 100'
+ 
+         let myNumber=70;
+         document.getElementById('hasil').innerText =myNumber;
+         
+         // no 3
+         let paragraphelement =document.createElement('li') 
+         paragraphelement.innerText ='List Makan Siang'
+         document.getElementById('myList').appendChild(paragraphelement);
+ 
+         // no 4
+         function tampilkanUkuranBaju() {
+             const inputElement = document.getElementById('ukuranBaju');
+             const ukuranBaju = inputElement.value;
+             console.log(ukuranBaju);
+         }
+ 
+         // no 5
+         function tampilkanUkuranCelana() {
+             const inputElement = document.getElementById('ukuranCelana');
+             const ukuranCelana = inputElement.value;
+             const liElement = document.createElement('li');
+             liElement.textContent = ukuranCelana;
+             const ulElement = document.getElementById('listUkuranCelana');
+             ulElement.appendChild(liElement);
+             console.log (` ${ukuranCelana}cm `);
+ 
+         }
+     </script>
+  </body>
+</html>
