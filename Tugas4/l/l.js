@@ -1,13 +1,12 @@
 var terdaftar = true;
-var pembayaran = true;
+var p = true;
 
 if (terdaftar == true) {
   console.log("anda lulus");
-
-  if (pembayaran === true) {
-    console.log("sudah bayar");
+  if (p === true) {
+    console.log("sdh");
   } else {
-    console.log("belom bayar");
+    console.log("blm");
   }
 } else {
   console.log("anda tidak lulus");
