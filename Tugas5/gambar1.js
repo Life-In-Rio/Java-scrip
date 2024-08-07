@@ -1,4 +1,4 @@
-let hari = "Rabu";
+let hari = "Sabtu";
 
 switch (hari) {
   case "Senin":
