@@ -1,5 +1,7 @@
 //no 1
 const identitas = ["Abyan", 16, "Bekasi",];
+console.log(identitas[0])
+console.log(identitas[2])
 console.log(identitas)
 // batas
 
@@ -33,3 +35,9 @@ console.log(number);
 // no 7
 console.log(number.length)
 // batas
+
+
+const identitass = ["Abyan", 16, "Bekasi",];
+identitass.splice(1, 1);
+delete identitass[0]
+console.log(identitass)

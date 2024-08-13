@@ -1,9 +1,9 @@
 
 //Soal no 1
-const umur = 6;
-if (umur > 5) {
+const umur = 3;
+if (umur >= 5) {
   console.log("Anda harus membayar tiket penuh");
-} else if (umur >= 2 && umur <= 5) {
+} else if (umur >= 2 && umur < 5) {
   console.log("Anda harus membayar setengah harga");
 } else {
   console.log("Anda tidak boleh masuk");
@@ -54,10 +54,12 @@ if (posisiPlayer.x > 0 && posisiPlayer.y > 0) {
 
 
 //Soal no 5
-const totalPembelian = 100;
+const totalPembelian = 200;
 let diskon = 0;
 
 if (totalPembelian >= 200) {
+  console.log("Selamat, Anda mendapatkan diskon sebesar 15%");
+  
   diskon = 0.15;
 } else if (totalPembelian >= 100 && totalPembelian <= 199) {
   diskon = 0.10;
