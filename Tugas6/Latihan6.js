@@ -1,5 +1,5 @@
 //no 1
-const identitas = ["Abyan", 16, "Bekasi",];
+const identitas = ["Abyan", 16, "Bekasi",17];
 console.log(identitas[0])
 console.log(identitas[2])
 console.log(identitas)

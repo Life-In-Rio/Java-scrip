@@ -5,9 +5,10 @@ const Person = {
   age: 16,
   address: {
     city: "Bekasi",
+    country: "Indonesia",
   },
 };
-console.log(Person.address.city);
+console.log(Person.address.country);
 
 //batas
 
