@@ -51,8 +51,7 @@ class Hewan {
   }
   
   // Buat kode kamu di bawah ini
-  
-  class Harimau extends Hewan{
+     class Harimau extends Hewan{
     constructor(nama){
     super(nama);
   

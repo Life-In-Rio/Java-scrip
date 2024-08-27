@@ -31,6 +31,6 @@ console.log(leader.introduce())
 let employe = new Employee ("Abyan", "Employee");
 console.log(employe.introduce())
 let person = new Person ("Abyan");
-console.log(person.introduce())x
+console.log(person.introduce())
 
 
