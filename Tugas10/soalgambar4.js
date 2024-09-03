@@ -1,13 +1,13 @@
 function calculateTax(price, location) {
     if (location == "Jakarta") {
-      return price * 0.1;
+      return price  * 0.1;
     }
     if (location == "Bandung") {
       return price * 0.05;
     }
   }
   
-  var finalPrice = calculateTax(10000, "Jakarta");
+  var finalPrice = calculateTax(1000, "Jakarta");
   console.log(finalPrice);
   
   function displayResult(finalPrice, paymentStatus) {

@@ -25,11 +25,11 @@
 
   }
 }
-let akunbank1 = new Akunbank(100, 0);
-akunbank1.setSaldo(-10); 
+let akunbank1 = new Akunbank(150, 0);
+akunbank1.setSaldo(-40); 
 console.log(akunbank1.getSaldo()); 
 
-akunbank1.setor(50); 
+akunbank1.setor(70); 
 console.log(akunbank1.getSaldo()); 
 
 

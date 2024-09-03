@@ -19,3 +19,7 @@ function calculatePrice(quantity, pricePerItem, isMember) {
   
   console.log(confirmPurchase(true, 15000));
   console.log(confirmPurchase(false, 15000));
+
+
+
+  // quantity * pricePerItem * 0.15 rumus diskon
