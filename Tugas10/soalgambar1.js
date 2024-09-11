@@ -19,3 +19,13 @@ function applyDiscount (usertype, purchaseAmount) {
 }
 console.log(applyDiscount("VIP", 200))
 console.log(applyDiscount("NON VIP", 100));
+
+
+function tes(bebas){
+return `halo ${bebas}`
+}
+console.log(tes("Nina"))
+
+
+const times = (a, b) => a * b
+console.log(times(2, 3))
