@@ -19,12 +19,11 @@ class akunBank {
       } else {
         return (_saldo = saldo + setoran);
       }
-      return _saldo;
     };
   }
 }
 
-let akun1 = new akunBank(2700, 5000);
+let akun1 = new akunBank(1000, 5000);
 console.log(akun1.getSaldo());
 
 
