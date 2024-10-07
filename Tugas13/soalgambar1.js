@@ -16,4 +16,3 @@ fecthData()
         console.log(error);
     })
 
-    
