@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nyoba dom</title>
+  </head>
+  <body>
+    <p id="id">Hello World</p>
+
+    <p class="id2">Hello World</p>
+    <p class="id2">Hello World</p>
+    <p class="id2">Hello World</p>
+
+    <h1>Hello World</h1>
+
+    <h1 class="coba"><b>Hello World</b></h1>
+
+    
+
+    <script>
+      //   let id = document.getElementById("id");
+      //   console.log(id);
+
+      //   let id2 = document.getElementsByClassName("id2");
+      //   console.log(id2);
+
+      //   let id3 = document.getElementsByTagName("h1");
+      //   console.log(id3);
+
+      //   let id4 = document.querySelector("#id");
+      //   console.log(id4);
+
+      //   let id5 = document.querySelectorAll(".id2");
+      //   console.log(id5);
+
+        const coba = document.getElementsByClassName("coba");
+        console.log(coba[0]);
+        console.log(coba[0].innerText);
+        console.log(coba[0].innerHTML);
+        console.log((coba[0].style.color = "blue"));
+        console.log((coba[0].style.backgroundColor = "yellow"));
+        console.log((coba[0].style.textAlign = "center"));
+
+      const newElement = document.createElement("p");
+      newElement.innerText = "Mengubah konten DOM";
+      coba[0].appendChild(newElement);
+
+      coba[0].removeChild(newElement);
+      
+    </script>
+  </body>
+</html>

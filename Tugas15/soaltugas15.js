@@ -34,7 +34,7 @@ function insert4(){
   if(konfirmasi == true){
     const name = prompt("Siapa nama kamu?")
     if(name == null || name == ""){
-        alert("Terima kasih");
+        alert("Anda tidak memasukkan nama anda");
     }else{
         alert("selamat datang " + name);
     }
