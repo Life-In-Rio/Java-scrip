@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="onloadpage()">
+    <button onclick="tunjukanpesan()">Disini woi</button>
+
+    <button id="myButton">Pencet lagi</button>
+    <script>
+      const myButton = document.getElementById("myButton");
+      myButton.addEventListener("click", function () {
+        alert("Hello World!");
+      });
+
+      function tunjukanpesan() {
+        alert("Yokoso sakasama no sekai");
+      }
+
+      function onloadpage() {
+        alert("Halaman dimuat ulang");
+      }
+    </script>
+  </body>
+</html>

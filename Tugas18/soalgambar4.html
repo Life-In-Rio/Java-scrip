@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Sambutan</title>
+    <style>
+      body {
+        background-color: #f0f8ff;
+        text-align: center;
+        margin-top: 50px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+        margin: 20px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Yokoso sakasama no sekai</h1>
+    <button id="messageButton">cihuy</button>
+
+    <script>
+      window.onload = function () {
+        let proceed = confirm("Apakah Anda ingin melanjutkan?");
+        if (proceed) {
+          alert("Selamat datang di halaman!");
+          requestName();
+        } else {
+          alert("Anda memilih untuk tidak melanjutkan.");
+        }
+      };
+
+      function requestName() {
+        let name = prompt("Masukkan nama Anda:");
+        if (!name) {
+          let retry = confirm("Apakah Anda ingin mencoba lagi?");
+          if (retry) {
+            requestName();
+          } else {
+            alert("Terima kasih!");
+          }
+        } else {
+          alert("Halo, " + name + "! Selamat datang!");
+        }
+      }
+
+      let button = document.getElementById("messageButton");
+      button.textContent = "Tampilkan Pesan";
+      button.addEventListener("click", requestName);
+    </script>
+  </body>
+</html>

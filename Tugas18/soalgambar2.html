@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman kosong</title>
+  </head>
+  <body>
+    <button id="myButton">ここをクリック</button>
+
+    <script>
+      function showAlert() {
+        alert("Tombol diklik!");
+      }
+
+      window.onload = function () {
+        const button = document.getElementById("myButton");
+        button.addEventListener("click", showAlert);
+      };
+    </script>
+  </body>
+</html>
