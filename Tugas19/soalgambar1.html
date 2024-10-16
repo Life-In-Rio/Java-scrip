@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>soal gambar 1</title>
+  </head>
+  <body>
+    <button id="triggerButton">Click Me</button>
+
+    <script>
+      const customClickEvent = new Event("customClickEvent");
+
+      function handleCustomClick() {
+        console.log("Custom click event triggered!");
+      }
+
+      window.addEventListener("customClickEvent", handleCustomClick);
+
+      document
+        .getElementById("triggerButton")
+        .addEventListener("click", function () {
+          window.dispatchEvent(customClickEvent);
+        });
+    </script>
+  </body>
+</html>

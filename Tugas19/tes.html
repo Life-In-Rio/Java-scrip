@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motivasi</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Butuh Motivasi?</h1>
+    <h3 id="Caption">Tekan tombol dibawah ini untuk mendapatkan motivasi</h3>
+    <button class="button" id="tombol">Dapatkan Motivasi</button>
+
+    <script>
+      const getMotivasiEvent = new Event("getmotivasi");
+
+      function motivasiHandler() {
+        document.getElementById("Caption").innerText =
+          "Dunia penuh dengan kebohongan sehingga kebohongan menjadi kebenaran";
+      }
+
+      window.addEventListener("load", function () {
+        const tombol = document.getElementById("tombol");
+
+        window.addEventListener("getmotivasi", motivasiHandler);
+        tombol.addEventListener("click", function () {
+          window.dispatchEvent(getMotivasiEvent);
+        });
+      });
+    </script>
+  </body>
+</html>
