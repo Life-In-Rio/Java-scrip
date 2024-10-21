@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover</title>
+    <style>
+        /* Gaya awal untuk elemen div */
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 13, 255);
+            margin-left: 670px;
+            line-height: 200px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemen div -->
+    <div id="colorBox"></div>
+
+    <script>
+        // Ambil elemen div
+        const colorBox = document.getElementById('colorBox');
+
+        // Tambahkan event listener untuk event mouseover
+        colorBox.addEventListener('mouseover', function() {
+            // Ubah warna latar belakang saat mouse melayang di atasnya
+            colorBox.style.backgroundColor = 'red';
+        });
+
+        // Tambahkan event listener untuk event mouseout
+        colorBox.addEventListener('mouseout', function() {
+            // Kembalikan warna latar belakang ke warna awal
+            colorBox.style.backgroundColor = 'blue';
+        });
+    </script>
+</body>
+</html>
