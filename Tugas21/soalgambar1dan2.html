@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penyimpanan Data di Local Storage</title>
+    <style>
+      #Body {
+        background-color: #08c3aa;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 500px;
+        height: 200px;
+        text-align: center;
+        border-radius: 20px;
+      }
+      #deleteButton {
+        width: 235px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Body">
+      <h2>Masukkan Nama Pengguna</h2>
+      <form id="userForm">
+        <input
+          type="text"
+          id="usernameInput"
+          placeholder="Masukkan nama Anda"
+          required
+        />
+        <button type="submit">Simpan</button>
+      </form>
+      <button id="deleteButton">Hapus</button>
+      <div id="displayArea"></div>
+      <div id="status"></div>
+    </div>
+    <script>
+      // Fungsi untuk menampilkan nama pengguna yang tersimpan
+      function displayUsername() {
+        const savedUsername = localStorage.getItem("username");
+        const displayArea = document.getElementById("displayArea");
+        const status = document.getElementById("status");
+
+        if (savedUsername) {
+          displayArea.textContent = `Nama yang tersimpan: ${savedUsername}`;
+          status.textContent = "Nama pengguna saat ini tersedia.";
+        } else {
+          displayArea.textContent = "Belum ada nama yang tersimpan.";
+          status.textContent = "Tidak ada nama pengguna yang tersedia.";
+        }
+      }
+
+      // Panggil fungsi untuk menampilkan nama pengguna dan status saat halaman dimuat
+      displayUsername();
+
+      // Event listener untuk menyimpan nama ke localStorage
+      document
+        .getElementById("userForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Mencegah halaman direload
+
+          const username = document.getElementById("usernameInput").value;
+          localStorage.setItem("username", username);
+
+          // Tampilkan nama yang baru disimpan
+          displayUsername();
+
+          // Kosongkan input
+          document.getElementById("usernameInput").value = "";
+        });
+
+      // Event listener untuk menghapus nama dari localStorage
+      document
+        .getElementById("deleteButton")
+        .addEventListener("click", function () {
+          localStorage.removeItem("username");
+
+          // Perbarui tampilan dan status
+          displayUsername();
+        });
+    </script>
+  </body>
+</html>
